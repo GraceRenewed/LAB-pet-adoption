@@ -4,13 +4,18 @@ let domString = "";
 for (const pet of pets) {
   // CARD FROM BOOTSTRAP: https://getbootstrap.com/docs/5.1/components/card/#example Removed the button
   domString += `<div class="card" style="width: 18rem;">
-      <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+      <img src=${pets.imageUrl} class="card-img-top" alt=${pets.name}>
       <div class="card-body">
-        <h5 class="card-title">${pet.name}</h5>
-        <p class="card-text">${pet.ingredients}</p>
+        <h5 class="pet-name">${pets.name}</h5>
+        <h3 class="pet-color">${pets.color}</h3>
+        <p class="pet-skill">${pets.specialSkill}</p>
+      </div>
+      <div class="sorting-pets">
+        <h3 class=${pet-type}></h3>
       </div>
     </div>`;
 };
+
 targetingApp.innerHTML = domString;
 
 const pets = [
@@ -258,4 +263,4 @@ const pets = [
     }
   ];
 
-  
+ 

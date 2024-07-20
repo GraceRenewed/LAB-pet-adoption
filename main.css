@@ -1,3 +1,8 @@
- .cats {
-    background-color: Pink;
- }
+#app {
+   display: flex;
+   flex-flow: row wrap;
+}
+
+app.card {
+   margin: 10px;
+}

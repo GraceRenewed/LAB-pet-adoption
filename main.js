@@ -1,6 +1,3 @@
-
-
-
 const pets = [
     {
       id: 1,
@@ -264,3 +261,40 @@ for (const pet of pets) {
 };
 
 targetingApp.innerHTML = domString;
+
+const filter = (pets, petType) => {
+  const petArray = [];
+
+  for (const pet of pets) {
+    if(pet.type === petType) {
+      petArray.push(pet);
+    }
+  }
+  return petArray;
+};
+
+const showAllBtn = document.querySelector("#all-pets");
+const showCatBtn = document.querySelector("#cat");
+const showDogBtn = document.querySelector("#dog");
+const showDinoBtn = document.querySelector("#dino");
+
+showAllBtn.addEventListener("click", () => {
+  cardsOnDom(pets);
+});
+
+
+showCatBtn.addEventListener("click", () => {
+  const petCats = filter (pets, "cat");
+  console.log("cats")
+  cardsOnDom(petCats);
+});
+
+showDogBtn.addEventListener("click", () => {
+  const petDogs = filter (pets, "dog");
+  cardsOnDom(petDogs);
+});
+
+showDinoBtn.addEventListener("click", () => {
+  const petDinos = filter(pets, "dino");
+  cardsOnDom(petDinos);
+});

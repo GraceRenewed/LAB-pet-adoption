@@ -262,6 +262,20 @@ for (const pet of pets) {
 
 targetingApp.innerHTML = domString;
 
+const cardsOnDom = (pets) => {
+  let domString = "";
+  for (const pet of pets) {
+    domString += `<div class="card" style="width: 18rem;">
+    <img src="${pet.imageUrl}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-text">${pet.type}</p>
+    </div>
+  </div>`;
+  }
+
+  renderToDom("#app", domString);
+};
+
 const filter = (pets, petType) => {
   const petArray = [];
 

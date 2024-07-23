@@ -1,8 +1,45 @@
 #app {
-   display: flex;
-   flex-flow: row wrap;
+   height: 125vh;
+  width: 100%;
+  padding-left: 35px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 
-app.card {
-   margin: 10px;
+.title {
+   margin-right: auto;
+   margin-left: auto;
+   font-family: var(system-ui, apple-system); 
+   font-size: 48px;
+   color: purple;
+   
+   
+}
+
+.btn btn-primary {
+   margin-right: auto;
+   margin-left: auto;
+}
+
+.card {
+   margin: 100px auto 0;
+   text-align: center;
+   width: 400px;
+   height: 600px;
+   perspective: 700px;
+   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  
+}
+
+form {
+   width: 50%;
+   background-color: plum;
+   margin-right: auto;
+   margin-left: auto;
+   border: 20%;
+   padding: 5%;
+   ;
 }

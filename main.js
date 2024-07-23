@@ -9,7 +9,7 @@ const pets = [
     },
     {
         id: 2,
-      imageUrl: "http://www.jozilife.co.za/wp-content/uploads/The-Dino-Expo.jpg",
+      imageUrl: "https://img.freepik.com/free-photo/dinosaur-roars-fiercely-prehistoric-landscape-generative-ai_188544-8721.jpg?size=626&ext=jpg&ga=GA1.1.934505522.1721766816&semt=sph",
       name: "Trouble",
       color: "Brown",
       specialSkill: "Just picks the tomatoes off of a sandwich instead of requesting a whole new sandwich.",
@@ -57,7 +57,7 @@ const pets = [
     },
     {
       id: 8,
-      imageUrl: "http://www.theouthousers.com/images/jck//ThanosCopter/news/grumpasaur.jpg",
+      imageUrl: "https://img.freepik.com/free-photo/extinct-triceratops-dinosaur-with-natural-habitat_23-2151646981.jpg?size=626&ext=jpg&ga=GA1.2.934505522.1721766816&semt=sph",
       name: "Ginger",
       color: "Grey",
       specialSkill: "Comfortable in the outdoors for up to eight hours.",
@@ -81,7 +81,7 @@ const pets = [
     },
     {
       id: 11,
-      imageUrl: "http://www.cantref.com/userfiles/events/walking%20dino.jpg?w=600",
+      imageUrl: "https://img.freepik.com/premium-psd/allosaurus-dinosaur-white-background_44074-6415.jpg?size=626&ext=jpg&ga=GA1.1.934505522.1721766816&semt=sph",
       name: "Coco",
       color: "Orange",
       specialSkill: "Can be around food without staring creepily at it.",
@@ -121,7 +121,7 @@ const pets = [
     },
     {
       id: 16,
-      imageUrl: "https://images.readwrite.com/wp-content/uploads/2018/03/t-rex-dino-quiz-e1490854556549.jpg",
+      imageUrl: "https://img.freepik.com/premium-photo/dinosaur-stegosaurus-background-mountains_977935-6802.jpg?size=626&ext=jpg&ga=GA1.2.934505522.1721766816&semt=sph",
       name: "Smokey",
       color: "Brown",
       specialSkill: "Drives at a safe rate of speed in snow or rain.",
@@ -129,7 +129,7 @@ const pets = [
     },
     {
      id: 17,
-      imageUrl: "http://www.funnycatsite.com/pictures/Close_Up_Yawn.jpg",
+      imageUrl: "https://img.freepik.com/free-photo/playful-cat-peeking-from-white-surface_60438-3920.jpg?ga=GA1.1.934505522.1721766816&semt=sph",
       name: "Muffin",
       color: "Yellow",
       specialSkill: "Does not freak out if you haven’t seen his favorite movie (The Big Lebowski).",
@@ -137,7 +137,7 @@ const pets = [
     },
     {
       id: 18,
-      imageUrl: "https://www.nation.co.ke/image/view/-/4078922/highRes/1742693/-/maxw/600/-/1453yvh/-/DINO.jpg",
+      imageUrl: "https://img.freepik.com/free-photo/tyrannosaurus-rex-wild_23-2151446447.jpg?size=626&ext=jpg&ga=GA1.2.934505522.1721766816&semt=sph",
       name: "Salem",
       color: "Brown",
       specialSkill: "Proficient in air guitar",
@@ -155,7 +155,7 @@ const pets = [
     },
     {
       id: 20,
-      imageUrl: "http://www.funnycatsite.com/pictures/Lazy_White_Cat.jpg",
+      imageUrl: "https://img.freepik.com/free-photo/cute-cat-digital-art_23-2151232310.jpg?ga=GA1.1.934505522.1721766816&semt=ais_user",
       name: "Spooky",
       color: "Black",
       specialSkill: "Uses litter box at appropriate hours.",
@@ -163,7 +163,7 @@ const pets = [
     },
     {
       id: 21,
-      imageUrl: "https://img.buzzfeed.com/buzzfeed-static/static/2015-11/2/12/enhanced/webdr15/anigif_enhanced-29802-1446485228-10.gif?crop=250:165;0,0&downsize=715",
+      imageUrl: "https://img.freepik.com/free-photo/pterodactylus-natural-environment_23-2151640146.jpg?size=626&ext=jpg&ga=GA1.2.934505522.1721766816&semt=sph",
       name: "Miss kitty",
       color: "Red",
       specialSkill: "Owns a Nintendo Power Glove.",
@@ -171,7 +171,7 @@ const pets = [
     },
     {
         id: 22,
-      imageUrl: "http://funnyanimalphoto.com/wp-content/uploads/2013/08/cat_caught_mouse_thegatewaypundit.jpg",
+      imageUrl: "https://img.freepik.com/free-photo/selective-closeup-cute-kitten-floor_181624-58552.jpg?ga=GA1.1.934505522.1721766816&semt=ais_user",
       name: "Snuggles",
       color: "Orange",
       specialSkill: "Is comfortable with jokes about his receding hairline.",
@@ -195,7 +195,7 @@ const pets = [
     },
     {
       id: 25,
-      imageUrl: "http://funbk.s3.amazonaws.com/wp-content/uploads/2016/06/funny-cat-video-which-will-make-you-laugh-louder.jpg",
+      imageUrl: "https://img.freepik.com/premium-photo/cute-red-kitten-hiding-from-rain-leaves-ai-generated_859483-103.jpg?ga=GA1.1.934505522.1721766816&semt=ais_user",
       name: "Salem",
       color: "Red",
       specialSkill: "Knows the words to 4 rap songs.",
@@ -235,7 +235,7 @@ const pets = [
     },
     {
         id: 30,
-       imageUrl: "http://lsae2.iypcdn.com/static//modules/uploads/photos/language1/dino-live-22.jpg?119",
+       imageUrl: "https://img.freepik.com/free-photo/view-extinct-triceratops-dinosaur-creature_23-2151646911.jpg?size=626&ext=jpg&ga=GA1.2.934505522.1721766816&semt=sph",
        name: "Lucy",
       color: "Red",
       specialSkill: "Doesn’t get weirded out by the word “moist.”",
@@ -255,8 +255,8 @@ const pets = [
       domString += `<div class="card" style="width: 18rem;">
         <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
         <div class="card-body">
-        <h5 class="pet-name">${pet.name}</h5>
-        <h3 class="pet-color">${pet.color}</h3>
+        <h3 class="pet-name">${pet.name}</h3>
+        <h5 class="pet-color">${pet.color}</h5>
           <p class="pet-skill">${pet.specialSkill}</p>
         <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
       </div>
@@ -282,40 +282,39 @@ const pets = [
 
   const form = document.querySelector('form');
 
-  const createMember = (e) => {
+  const createPet = (e) => {
     e.preventDefault(); 
   
-    const newMemberObj = {
-      id: team.length + 1,
+    const newPetObj = {
+      id: pets.length + 1,
       name: document.querySelector("#name").value,
-      email: document.querySelector("#color").value,
-      favoriteColor: document.querySelector("#skill").value,
-      image: document.querySelector("#image").value
+      color: document.querySelector("#color").value,
+      skill: document.querySelector("#specialSkill").value,
+      image: document.querySelector("#imageUrl").value,
+      type: document.querySelector("#type").value
     }
   
-    team.push(newMemberObj);
-    cardsOnDom(team);
+    pets.push(newPetObj);
+    cardsOnDom(pets);
     form.reset();
   }
   
 
-  form.addEventListener('submit', createMember);
+  form.addEventListener('submit', createPet);
 
   const app = document.querySelector("#app");
 
 
 app.addEventListener('click', (e) => {
-  
-
   if (e.target.id.includes("delete")) {
    
     const [, id] = e.target.id.split("--");
 
-    const index = team.findIndex(e => e.id === Number(id));
+    const index = pets.findIndex(e => e.id === Number(id));
 
-    team.splice(index, 1);
+    pets.splice(index, 1);
 
-    cardsOnDom(team);
+    cardsOnDom(pets);
   }
 });
 

@@ -1,3 +1,4 @@
+//Creates an array that can be accessed and sorted through using dot(pet.name) and bracket(pet[name]) notation.
 const pets = [
     {
       id: 1,
@@ -242,7 +243,7 @@ const pets = [
       type: "dino",     
     }
   ]
-
+//This utility function allows the user to add or update information to any id within the html or js and put it on the internet page
   const renderToDom = (divId, htmlToRender) => {
     const selectedDiv = document.querySelector(divId);
     selectedDiv.innerHTML = htmlToRender;
@@ -251,6 +252,7 @@ const pets = [
 
   const cardsOnDom = (pets) => {
     let domString = "";
+    //The for loop allows us to go through each pet in the array and pull out data within them choosing which data will be displayed on the internet page using the arrow function above
     for (const pet of pets) {
       domString += `<div class="card" style="width: 18rem;">
         <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
@@ -265,10 +267,11 @@ const pets = [
       </div>`; 
     }
 
+    //Places all the information from the app and puts it on the internet page
     renderToDom("#app", domString);
   };
 
-
+  //This function filters through each pet and pulls out any pets that match the pet type selected
   const filter = (pets, petType) => {
   const petArray = [];
 
@@ -277,13 +280,17 @@ const pets = [
       petArray.push(pet);
     }
   }
+  //allows the function to return something and puts it back on the internet page
   return petArray;
   };
 
+  //Allows user to access an element within the form
   const form = document.querySelector('form');
 
+
+  //Function that takes the values to the form and pushes the new pet to the array
   const createPet = (e) => {
-    e.preventDefault(); 
+    e.preventDefault(); //Used every time you create a form
   
     const newPet = {
       id: pets.length + 1,
@@ -299,25 +306,27 @@ const pets = [
     form.reset();
   }
   
-
+  //When the submit button is pressed it instigates the create pet function
   form.addEventListener('submit', createPet);
-
+ 
+  //Targets the app div
   const app = document.querySelector("#app");
 
-
+  //When the delete button is clicked it instigates the delete function
 app.addEventListener('click', (e) => {
   if (e.target.id.includes("delete")) {
-   
+   //basically this says tell it to look for the id of the pet in which the delete button is pressed (e) is a placeholder
     const [, id] = e.target.id.split("--");
-
+    //of that pet with the id it removes (splits) that id and the information from the pets array
     const index = pets.findIndex(e => e.id === Number(id));
-
+    //This removes it from the array
     pets.splice(index, 1);
-
+    //Reposts the updated array
     cardsOnDom(pets);
   }
 });
 
+  //Targets the sorting buttons
   const showAllBtn = document.querySelector("#all-pets");
   const showCatBtn = document.querySelector("#cats");
   const showDogBtn = document.querySelector("#dogs");
@@ -327,7 +336,7 @@ showAllBtn.addEventListener("click", () => {
   cardsOnDom(pets);
 });
 
-
+//Event listener that "listens" for the click on the sorting buttons 
 showCatBtn.addEventListener("click", () => {
   const petCats = filter(pets, "cat");
   cardsOnDom(petCats);

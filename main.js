@@ -285,7 +285,7 @@ const pets = [
   const createPet = (e) => {
     e.preventDefault(); 
   
-    const newPetObj = {
+    const newPet = {
       id: pets.length + 1,
       name: document.querySelector("#name").value,
       color: document.querySelector("#color").value,
@@ -294,7 +294,7 @@ const pets = [
       type: document.querySelector("#type").value
     }
   
-    pets.push(newPetObj);
+    pets.push(newPet);
     cardsOnDom(pets);
     form.reset();
   }

@@ -99,7 +99,7 @@ const pets = [
     },
     {
       id: 13,
-       imageUrl: "http://1kjkdg1axrkd2g03cnboj761.wpengine.netdna-cdn.com/wp-content/uploads/2017/12/braydon-anderson-105552-e1512684107659.jpg",
+       imageUrl: "https://cdn.pixabay.com/photo/2018/03/31/06/31/dog-3277416_640.jpg",
        name: "Chester",
       color: "Red",
       specialSkill: "Expertly quotes and recognizes dialogue from early seasons of The Simpsons.",
@@ -147,7 +147,7 @@ const pets = [
     },
     {
       id: 19,
-      imageUrl: "http://dailynewsdig.com/wp-content/uploads/2014/03/Creative-And-Funny-Dog-Stock-Photography-Pictures-2.jpg",
+      imageUrl: "https://cdn.pixabay.com/photo/2016/05/09/10/42/weimaraner-1381186_640.jpg",
       name: "Callie",
       color: "Blue",
       specialSkill: "Listens attentively to boring stories.",
@@ -188,7 +188,7 @@ const pets = [
     },
     {
         id: 24,
-      imageUrl: "http://www.dogbreedplus.com/dog_breeds/images/basset-hound-4.jpg",
+      imageUrl: "https://cdn.pixabay.com/photo/2018/05/11/08/11/dog-3389729_640.jpg",
       name: "George",
       color: "Brown",
       specialSkill: "Participates in karaoke but does not force others to go out to karaoke.",
@@ -255,7 +255,7 @@ const pets = [
     //The for loop allows us to go through each pet in the array and pull out data within them choosing which data will be displayed on the internet page using the arrow function above
     for (const pet of pets) {
       domString += `<div class="card" style="width: 18rem;">
-        <img src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
+        <image src=${pet.imageUrl} class="card-img-top" alt=${pet.name}>
         <div class="card-body">
         <h3 class="pet-name">${pet.name}</h3>
         <h5 class="pet-color">${pet.color}</h5>
@@ -275,6 +275,7 @@ const pets = [
   const filter = (pets, petType) => {
   const petArray = [];
 
+  //if type of pet matches pet type the pet card is pusehed into the new array
   for (const pet of pets) {
     if(pet.type === petType) {
       petArray.push(pet);
@@ -296,11 +297,11 @@ const pets = [
       id: pets.length + 1,
       name: document.querySelector("#name").value,
       color: document.querySelector("#color").value,
-      skill: document.querySelector("#specialSkill").value,
-      image: document.querySelector("#imageUrl").value,
+      specialSkill: document.querySelector("#specialSkill").value,
+      imageUrl: document.querySelector("#imageUrl").value,
       type: document.querySelector("#type").value
     }
-  
+  //Adds new pet from the input form and adss new pet card to the DOM and clears out the form
     pets.push(newPet);
     cardsOnDom(pets);
     form.reset();
@@ -308,6 +309,7 @@ const pets = [
   
   //When the submit button is pressed it instigates the create pet function
   form.addEventListener('submit', createPet);
+ 
  
   //Targets the app div
   const app = document.querySelector("#app");

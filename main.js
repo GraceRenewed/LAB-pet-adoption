@@ -114,7 +114,7 @@ const pets = [
     },
     {
       id: 15,
-      imageUrl: "http://cathumor.net/wp-content/uploads/2013/12/cat-humor-funny-karate-cat-2.jpg",
+      imageUrl: "https://t3.ftcdn.net/jpg/01/23/11/46/240_F_123114607_t5rSb94jTPWH3LLKaDd5krHgQdwsN7K6.jpg",
       name: "Coco",
       color: "Red",
       specialSkill: "Burps minimally.",

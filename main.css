@@ -1,14 +1,8 @@
-.body {
+#app {
    display: flex;
+   max-width: 1400px;
    flex-wrap: wrap;
-   flex-direction: row; 
-   width: 30%;
-   margin: 25px;
-   text-align: center;
-   justify-content: center;
-   padding-left: 35px; 
-   gap: 40px;
-  
+   justify-content: space-between;
 }
 
 .title {
@@ -17,8 +11,6 @@
    font-family: var(system-ui, apple-system); 
    font-size: 48px;
    color: purple;
-   
-   
 }
 
 #cats #dogs #dinos #all-pets {
@@ -32,8 +24,6 @@
    width: 300px;
    height: 600px;
    align-content: space-evenly;
-   
-  
 }
 
 form {
@@ -43,5 +33,4 @@ form {
    margin-left: auto;
    border: 20%;
    padding: 5%;
-   ;
 }

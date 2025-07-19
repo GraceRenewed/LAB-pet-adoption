@@ -261,9 +261,8 @@ const pets = [
         <h5 class="pet-color">${pet.color}</h5>
           <p class="pet-skill">${pet.specialSkill}</p>
         <button class="btn btn-danger" id="delete--${pet.id}">Delete</button>
-      </div>
-        <div>
-          <h3 class=${pet.type}></h3>
+        <h3 class=${pet.type}></h3>
+        </div>   
       </div>`; 
     }
 

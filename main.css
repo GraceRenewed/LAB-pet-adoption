@@ -2,14 +2,13 @@
    display: flex;
    max-width: 1400px;
    flex-wrap: wrap;
-   justify-content: space-between;
+   justify-content: left;
 }
 
 .title {
-   margin-right: auto;
-   margin-left: auto;
+   text-align: center;
    font-family: var(system-ui, apple-system); 
-   font-size: 48px;
+   font-size: 52px;
    color: purple;
 }
 
@@ -19,11 +18,18 @@
   margin-left: auto;
 }
 
+.buttons {
+   display: flex;
+   justify-content: center;
+}
+
 .card {
    text-align: center;
-   width: 300px;
-   height: 600px;
-   align-content: space-evenly;
+}
+
+.card-img-top {
+   max-height: 191px;
+   object-fit: cover;
 }
 
 form {
